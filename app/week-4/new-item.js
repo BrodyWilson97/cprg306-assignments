@@ -8,7 +8,7 @@ export default function NewItem(props) {
 
     return (
         <section>
-            <h2>Quantity: {props.quantity}</h2>
+            <h2 className = 'font-bold py-2 px-4 mt-5 bg-center'>Quantity: {props.quantity}</h2>
             <button className={incrementButtonStyles} onClick={props.incrementQuantity} disabled={props.quantity >= 20}>+</button>
             <button className={decrementButtonStyles} onClick={props.decrementQuantity} disabled={props.quantity <= 1}>-</button>
             <button className={resetStyles} onClick={props.resetQuantity}>Reset</button>
